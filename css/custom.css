@@ -20,3 +20,35 @@
     background-position:center;
     background-size: 100% 100%
 }
+
+/* .form-group{
+    display:flex;
+    flex:0 0 auto;
+    flex-flow:row wrap;
+    align-items:center;
+    margin-bottom:0
+} */
+
+.custom-row{
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:-1.75rem
+}
+
+.my-custom-control {
+    position: relative;
+    z-index: 1;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 3.5rem;
+}
+
+.custom-mb-4{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+.custom-mb-5 {
+    margin-bottom: 7.5rem;
+}
