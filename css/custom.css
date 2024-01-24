@@ -1,0 +1,25 @@
+.bg-gradient-primary{
+    background-color:#303642;
+    background-image:linear-gradient(180deg,#3b4455 10%,#303642 100%);
+    background-size:cover
+}
+
+.custom-icon {
+    width: 50px;
+    height: auto;
+}
+
+.bg-login-image{background:url('/img/background/pexels-photo-5668484.webp');background-position:center;background-size:cover}
+
+
+
+.bg-register-image{background-position:center;background-size:cover}
+
+.image-container{
+    background:url(https://source.unsplash.com/Mv9hjnEUHR4/600x800);
+    background-position:center;
+    background-size:cover
+}
+
+d-none{display:none!important}
+d-lg-block{display:block!important}
