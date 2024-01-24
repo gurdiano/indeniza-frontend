@@ -9,17 +9,14 @@
     height: auto;
 }
 
-.bg-login-image{background:url('/img/background/pexels-photo-5668484.webp');background-position:center;background-size:cover}
-
-
-
-.bg-register-image{background-position:center;background-size:cover}
-
-.image-container{
-    background:url(https://source.unsplash.com/Mv9hjnEUHR4/600x800);
+.bg-login-image{
+    background:url('/img/background/pexels-photo-5668484.webp');
     background-position:center;
     background-size:cover
 }
 
-d-none{display:none!important}
-d-lg-block{display:block!important}
+.bg-register-image{
+    background:url('/img/background/pexels-photo-8112193.webp');
+    background-position:center;
+    background-size: 100% 100%
+}
