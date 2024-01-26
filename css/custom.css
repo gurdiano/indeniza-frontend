@@ -18,16 +18,14 @@
 .bg-register-image{
     background:url('/img/background/pexels-photo-8112193.webp');
     background-position:center;
-    background-size: 100% 100%
+    background-size: 100% 100%;
 }
 
-/* .form-group{
-    display:flex;
-    flex:0 0 auto;
-    flex-flow:row wrap;
-    align-items:center;
-    margin-bottom:0
-} */
+.bg-edit-image{
+    background:url('/img/background/pexels-photo-6077123.jpeg');
+    background-position:center;
+    background-size: 100% 100%;
+}
 
 .custom-row{
     display:flex;
@@ -52,3 +50,4 @@
 .custom-mb-5 {
     margin-bottom: 7.5rem;
 }
+
