@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         set_theme(savedTheme);
-        
     }
 });
 

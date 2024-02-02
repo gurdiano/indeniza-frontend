@@ -41,6 +41,7 @@ body[data-theme='t-light']{
 
     --sidebar-nav-item-all-color: #3a3b45;
     --sidebar-hover-background-color: #eaecf4;
+    --sidebar-hover-background-color-1: #eaecf4;
 
     --text-primary-color: #d6ac72;
     --sidebar-active-color: #d6ac72;
@@ -61,10 +62,11 @@ body[data-theme='t-light']{
     --topbar-dropdown-item-border-bottom: 1px solid #e3e6f0;
 
     --table-color: #858d9d;
-    --table-bordered-td-th-border-color: #363e4d;
-    --table-02-bordered-td-th-border-color: #6b2700;
+    --table-bordered-td-th-border-color: #e3e6f0;
+    --table-02-bordered-td-th-border-color: #e3e6f0;
     --custom-hover-color:#b7b9cc;
     --custom-hover-hover-color: #72737f;
+    --custom-border-left-primary-border-left: 0.25rem solid #363e4d;
 }   
 
 body[data-theme='t-dark']{
@@ -99,6 +101,7 @@ body[data-theme='t-dark']{
     --body-color: #ffffffcc;
     --sidebar-nav-item-all-color: #fff;
     --sidebar-hover-background-color: #d6ac72;
+    --sidebar-hover-background-color-1: #f1b662;
     --text-primary-color: #d6ac72;
     --sidebar-active-color: #d6ac72;
     --dropdown-menu-background-color: #4f4e4e;
@@ -116,6 +119,7 @@ body[data-theme='t-dark']{
     --table-02-bordered-td-th-border-color: #6b2700;
     --custom-hover-color:#ffffffad;
     --custom-hover-hover-color: #fff;
+    --custom-border-left-primary-border-left: 0.25rem solid #6b2700;
 }
 
 
@@ -143,6 +147,28 @@ body[data-theme='t-dark']{
         background:url('/img/background/pexels-photo-6077123.jpeg');
         background-position:center;
         background-size: 100% 100%;
+    }
+
+    .bg-service{
+        background:url('/img/background/16300281227_87860c17d2_b.jpg');
+        background-size: cover;
+        height: 500px;
+        width: 500px;
+    }
+
+    .bg-teste1{
+        background:url('/img/background/teste/588412.jpg');
+        background-size: cover;
+        height: 500px;
+        width: 500px;
+    }
+
+    .bg-teste2{
+        background:url('/img/background/16300281227_87860c17d2_b.jpg');
+        background-size: cover;
+        height: 678px;
+        width: 400px;
+        background-position-x: center;
     }
     /* Background */
 
@@ -327,11 +353,12 @@ body {
         color: var(--table-color);
     }
 
+    
     .table-bordered.table-01 td,
     .table-bordered.table-01 th,
     .table-bordered.table-01 {
         border-color: var(--table-bordered-td-th-border-color) !important;
-    } 
+    }
 
     .table-bordered.table-02 td,
     .table-bordered.table-02 th,
@@ -376,7 +403,7 @@ body {
 }
 
 
-/* Control */
+/* start- Control */
 
 .custom-hover{
     color: var(--custom-hover-color) !important;
@@ -385,6 +412,93 @@ body {
 .custom-hover:hover{
     color: var(--custom-hover-hover-color) !important;
 }
+/* end- Control */
+
+/* start- Pag Service */
+.custom-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.custom-bg-image {
+    background: url('/img/background/16300281227_87860c17d2_b.jpg');
+    height: 678px;
+    width: 400px;
+    background-position-x: center;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+
+@media (min-width: 768px) {
+    .custom-col-md-6 {
+        max-width: 95%;
+    }
+}
+
+.custom-col-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    margin-right: 3%;
+}
+
+.custom-md-5 {
+    max-width: 90%;
+}
+
+.custom-content {
+    height: auto;
+    flex: 1;
+}
+
+.custom-internal-content {
+    font-size: 1.75rem;
+    margin: 3px;
+    margin-left: 3%;
+}
+
+.custom-border-left-primary {
+    border-left: var(--custom-border-left-primary-border-left)!important;  
+}
+
+.custom-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--card-background-color);
+    background-clip: border-box;
+    border: var(--card-border);
+    border-radius: 0.35rem;
+    text-decoration: none;
+}
+
+.custom-card:hover {
+    color: #fff;
+    background-color: var(--sidebar-hover-background-color);
+    border-left: 0.25rem solid #363e4d !important;
+    box-shadow: 0 0 0 0.2rem rgba(42, 50, 73, 0.5);
+    text-decoration: none;
+}
+
+.custom-card:focus {
+    color: #fff;
+    background-color: var(--sidebar-hover-background-color);
+    border-color:  var(--sidebar-hover-background-color-1);;
+    border-left: 0.25rem solid #363e4d !important;
+    box-shadow: 0 0 0 0.2rem var(--sidebar-hover-background-color-1);
+    text-decoration: none;
+}
+
+.custom-card:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
 
 
 
