@@ -463,6 +463,16 @@ body {
     align-items: center;
 }
 
+.custom-container-3{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    width: 50%;
+    height: 3rem;
+    align-items: center;
+}
+
 .custom-mw-container {
     max-width: 1300px;
 }
