@@ -400,6 +400,14 @@ body {
     margin-left:-1.75rem
 }
 
+.custom-row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -.75rem;
+    margin-left: -.75rem;
+    justify-content: space-between;
+}
+
 .my-custom-control {
     position: relative;
     z-index: 1;
@@ -438,7 +446,7 @@ body {
 }
 /* end- Control */
 
-/* start- Pag Service */
+/* Pag Service */
 .custom-container {
     display: flex;
     width: 100%;
@@ -542,7 +550,28 @@ body {
     font-size: 1rem;
 }
 
+.custom-btn-block {
+    display: block;
+    width: 48.1%;
+}
 
+.custom-form-group {
+    margin-bottom: 2rem;
+}
+
+.btn-back {
+    color: #fff;
+    background-color: #ea4335;
+    border-color: #ea4335
+}
+
+.btn-back:hover {
+    color: #fff;
+    background-color: #e12717;
+    border-color: #e12717;
+}
+
+/* end of pag service */
 
 
 
