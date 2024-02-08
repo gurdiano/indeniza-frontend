@@ -225,7 +225,7 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">DPVAT</h1>
-                    <p class="mb-4">Input vehicle data here.</p>
+                    <p class="mb-4">Input service fee data here.</p>
 
                     <!-- Container-fluid  -->
                     <div class="container custom-mw-container">
@@ -244,70 +244,55 @@
                                     <div class="col-lg-7">
                                         <div class="p-5">
                                             <div class="text-center">
-                                                <h1 class="h4 text-gray-900 custom-mb-4">Vehicle</h1>
+                                                <h1 class="h4 text-gray-900 custom-mb-4">Legal Service Fee</h1>
                                             </div>
                                             
-                                            <div>
-                                                <label class="h12 text-gray-900">Data</label>
-                                            </div>
+                                            
                                             <form class="user">
-                                                <div class="form-group row">
-                                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                                            placeholder="Renavam">
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                                            placeholder="Plate">
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group row">
-                                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                                            placeholder="Brand">
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                                            placeholder="Model">
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group row">
-                                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                                            placeholder="Year">
-                                                    </div>
-                                                    <div class="form-group custom-row custom-container-3">
-                                                        <div class="my-custom-control custom-checkbox small">
-                                                            <input type="radio" class="custom-control-input" id="MotorcycleCheck" name="role">
-                                                            <label class="custom-control-label" for="MotorcycleCheck">Motorcycle</label>
-                                                        </div>
-                                                        <div class="my-custom-control custom-checkbox small ">
-                                                            <input type="radio" class="custom-control-input" id="CarCheck" name="role" checked="">
-                                                            <label class="custom-control-label" for="CarCheck">Car</label>
+                                                <div class="form-group custom-row-4">
+                                                    <div class="custom-md-6">
+                                                        <div><label class="h12 text-gray-900 custom-mt-0">Value</label></div>
+                                                        <div class="mb-3 mb-sm-0">
+                                                            <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                                                placeholder="$">
                                                         </div>
                                                     </div>
+
+                                                    <div class="custom-container-4 custom-i-0"></div>
+                                                </div>
+                                                
+                                                <div class="drag-area">
+                                                    <div class="drag-area-content">
+                                                        <div class="custom-icon-2">
+                                                            <div class="custom-i-1"></div>
+                                                        </div>
+                                                        <header>Drag and drop files here</header>
+                                                        <span class="custom-text-0">OR</span>
+
+                                                        <label for="file-input">
+                                                            <div class="custom-mb-3">
+                                                                <a class="btn btn-light btn-icon-split" id="btn-browse">
+                                                                    <span class="icon text-gray-600">
+                                                                        <i class="fa-solid fa-file-circle-plus"></i>
+                                                                    </span>
+                                                                    <span class="text custom-text-2">Browse Files</span>
+                                                                </a>  
+                                                            </div>
+                                                        </label>
+
+                                                        <input type="file" id="file-input" multiple hidden>
+                                                    </div>
                                                 </div>
 
-                                                <hr>
-
-                                                <div><label class="h12 text-gray-900 mt-3">Insurance Company</label></div>
-
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                                        placeholder="Name">
-                                                </div>
-                                                <div class="form-group"> 
-                                                    <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                                        placeholder="Sinistro nº">
+                                                <div class="element-style-0">
+                                                    <div id="file-list">
+                                                    </div>
                                                 </div>
 
                                                 <div class="form-group custom-row-2">
-                                                    <a href="dpvat-hospital.html" class="btn btn-back btn-user custom-btn-block custom-mb-6">Back</a>
-                                                    <a href="dpvat-service-fee.html" class="btn btn-primary btn-user custom-btn-block custom-mb-6">Next</a>
+                                                    <a href="dpvat-vehicle.html" class="btn btn-back btn-user custom-btn-block custom-mb-6">Back</a>
+                                                    <a href="#" class="btn btn-primary btn-user custom-btn-block custom-mb-6">Next</a>
                                                 </div>
-                                                
                                             </form>        
                                         </div>
                                     </div>
@@ -362,7 +347,8 @@
 
     <!-- my custom scripts -->
     <script src="js/custom.js"></script>
-
+    <script src="js/custom-0.js"></script>
+    <script src="js/custom-1.js"></script>
 
 </body>
 </html>
