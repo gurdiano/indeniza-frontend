@@ -510,10 +510,33 @@ body {
     height: 3rem;
 }
 
+/* report details */
+.custom-container-5{
+    display: flex;
+    width: 50%;
+}
+
+.custom-block-container-5{
+    display: block;
+    width: 50%;
+}
+
 .custom-mw-container {
     max-width: 1300px;
 }
 
+.custom-el-style {
+    max-width: 100%;
+}
+
+.c-border-bottom-success {
+    border-bottom: 0.25rem solid var( --card-header-background-color)!important;
+}
+
+.c-border-total-success {
+    border-bottom:  0.25rem solid #1cc88a!important;
+}
+/* enf of report details */
 .custom-bg-image {
     background: url('/img/background/16300281227_87860c17d2_b.jpg');
     height: 678px;
