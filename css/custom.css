@@ -536,7 +536,40 @@ body {
 .c-border-total-success {
     border-bottom:  0.25rem solid #1cc88a!important;
 }
-/* enf of report details */
+
+.text-success {
+    color: #9E9E9E!important;
+}
+
+.c-mxw{
+    max-width: 100%;
+}
+
+.el-style-0{
+    display: flex;
+    flex-direction: row;
+}
+
+.c-mr-0{
+    margin-right: 0.5rem;
+}
+
+.vertical-line {
+    border-left: 2px solid #9e9e9e3d!important;
+    height: 46px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.custom-text-primary-0 {
+    color: #1cc88a !important;
+}
+
+.custom-border-left-primary-0 {
+    border-left: 0.25rem solid #1cc88a!important;
+}
+/* end of report details */
+
 .custom-bg-image {
     background: url('/img/background/16300281227_87860c17d2_b.jpg');
     height: 678px;
