@@ -475,14 +475,6 @@ body {
 /* end- Control */
 
 /* Pag Service */
-.custom-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    margin-bottom: 2%;
-}
-
 .custom-container-2{
     display: flex;
     width: 100%;
@@ -511,22 +503,8 @@ body {
 }
 
 /* report details */
-.custom-container-5{
-    display: flex;
-    width: 50%;
-}
-
-.custom-block-container-5{
-    display: block;
-    width: 50%;
-}
-
 .custom-mw-container {
     max-width: 1300px;
-}
-
-.custom-el-style {
-    max-width: 100%;
 }
 
 .c-border-bottom-success {
@@ -545,20 +523,8 @@ body {
     max-width: 100%;
 }
 
-.el-style-0{
-    display: flex;
-    flex-direction: row;
-}
-
 .c-mr-0{
     margin-right: 0.5rem;
-}
-
-.vertical-line {
-    border-left: 2px solid #9e9e9e3d!important;
-    height: 46px;
-    margin-right: 2rem;
-    margin-left: 2rem;
 }
 
 .custom-text-primary-0 {
@@ -570,15 +536,162 @@ body {
 }
 /* end of report details */
 
-.custom-bg-image {
-    background: url('/img/background/16300281227_87860c17d2_b.jpg');
-    height: 678px;
-    width: 400px;
-    background-position-x: center;
-    border-radius: 3px;
-    overflow: hidden;
+/* Service detais */
+.c-border-bottom-success-0 {
+    border-bottom: 0.25rem solid var(--text-primary-color)!important;
 }
 
+.c-border-bottom-success-1 {
+    border-bottom: var(--custom-border-left-primary-border-left)!important;
+}
+
+.custom-card-0 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--card-background-color);
+    background-clip: border-box;
+    border: var(--card-border);
+    border-radius: 0.35rem;
+    text-decoration: none;
+}
+
+.custom-card-0:hover {
+    color: #fff;
+    background-color: var(--sidebar-hover-background-color);
+    border-bottom: 0.25rem solid #363e4d !important;
+    box-shadow: 0 0 0 0.2rem rgba(42, 50, 73, 0.5);
+    text-decoration: none;
+}
+
+.el-style-1{
+        margin-left: 1rem;
+        margin-right: 1rem;
+}
+
+.el-style-2{
+    height: 10vw;
+}
+
+.expanded-content-0{
+    display: none;
+}
+
+.expanded-content-1{
+    display: block;
+}
+
+.el-pt-0{
+    padding-top: 1.5rem;
+}
+
+.vertical-line {
+    border-left: 2px solid #9e9e9e3d!important;
+    height: 46px;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    display: none;
+}
+
+.el-style-0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.el-st-0 {
+    display: none;
+}
+
+@media (min-width: 800px){
+    .custom-container-5{
+        width: 100%;
+    }
+    
+    .custom-el-style{
+        max-width: 100%;
+    }
+
+    .custom-block-container-5{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .vertical-line {
+        border-left: 2px solid #9e9e9e3d!important;
+        height: 46px;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        display: block;
+    }
+
+    .el-style-0{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .el-st-0 {
+        display: flex;
+    }
+}
+
+@media (min-width: 1280px){
+    .custom-el-style {
+        max-width: 100%;
+        flex: 0 0 25%;
+    }
+
+    .cls {
+        flex: 0 0 50%;   
+    }
+
+    .custom-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        margin-bottom: 2%;
+    }
+    
+    .custom-container-5{
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+    }
+
+    .cc-5{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+    }
+    
+    .custom-block-container-5{
+        display: block;
+        width: 50%;
+    }
+
+    .cbc-5 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+/* end of Service details  */
+
+@media (min-width: 768px) {
+    .custom-bg-image {
+        background: url('/img/background/16300281227_87860c17d2_b.jpg');
+        height: 678px;
+        width: 400px;
+        background-position-x: center;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+}
 
 @media (min-width: 768px) {
     .custom-col-md-6 {
