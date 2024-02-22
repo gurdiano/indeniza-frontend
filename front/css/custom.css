@@ -504,6 +504,39 @@ body {
     height: 3rem;
 }
 
+.form-control:focus {
+    color: #6e707e;
+    background-color: #fff;
+    border-color: #bac8f3;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(78,115,223,.25);
+}
+
+.vld-true {
+    border-color: #4CAF50;
+} 
+
+.vld-false {
+    border-color: #e74a3b;
+} 
+
+.vld-true:focus {
+    color : #6e707e;
+    border-color: #8bc34a;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #1cc88a40;
+}
+
+.vld-false:focus {
+    color : rgb(110, 112, 126);
+    border-color: #E91E63;
+    outline: 0px;
+    box-shadow:#e74a3b42 0px 0px 0px 0.2rem;
+}
+
+.vld-onblur {
+    border-color: none;
+}
 /* report details */
 .custom-mw-container {
     max-width: 1300px;

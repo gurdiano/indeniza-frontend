@@ -1,27 +1,40 @@
-let value = "763.947.370-54";
+function formatCPF(input) {
+  const cpf_input = document.getElementById('cpf')
 
-console.log(validatorCPF(value));
+  var valor = input.value.replace(/\D/g, '');
 
-function validatorCPF(cpf) {
-  cpf = cpf.replace(/[^\d]+/g, '')
-  
-  if (cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)) return false
-
-  let sum = 0;
-  for (let i = 0; i < 9; i++) {
-      sum += parseInt(cpf.charAt(i)) * (10 - i);
+  if (valor.length > 3) {
+      valor = valor.replace(/(\d{3})(\d)/, '$1.$2');
   }
-  let result = 11 - (sum % 11);
-  let dv1 = result >= 10 ? 0 : result;
-
-  if (parseInt(cpf.charAt(9)) !== dv1) return false
-
-  sum = 0;
-  for (let i = 0; i < 10; i++) {
-      sum += parseInt(cpf.charAt(i)) * (11 - i);
+  if (valor.length > 6) {
+      valor = valor.replace(/(\d{3})(\d)/, '$1.$2');
   }
-  result = 11 - (sum % 11);
-  let dv2 = result >= 10 ? 0 : result;
 
-  return parseInt(cpf.charAt(10)) === dv2
+  if (valor.length > 9) {
+      valor = valor.replace(/(\d{3})(\d)/, '$1-$2');
+  }
+
+  if (validatorCPF(valor)){
+      validation_true(cpf_input)
+  }else{
+      validation_false(cpf_input)
+  }
+
+  valor = valor.substring(0, 14);
+
+  input.value = valor;
+}
+
+let br_num = '(11) 9 6262-7844'
+// var valor = input.value.replace(/\D/g, '');
+// valor = valor.replace(/(\d{3})(\d)/, '$1.$2');
+function formatPhone(input) {
+  let value = input.value.replace(/\D/g, '')
+
+  let regex = /(\d{2})(\d)/
+  if(value.length > 2) {
+    value = value.replace(/(\d{2})(\d)/, '($1) $2')
+  }
+
+  input.value = value
 }
