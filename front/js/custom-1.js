@@ -35,10 +35,10 @@ document.addEventListener('DOMContentLoaded', event=>{
   const body_state = localStorage.getItem('body')
   const sidebar_state = localStorage.getItem('sidebar')
 
-  if(body_state != null || body_state != undefined){
+  if(body_state != null && body_state != undefined){
     body_s.classList.add(body_state)
   }
-  if(sidebar_state != null || sidebar_state != undefined){
+  if(sidebar_state != null && sidebar_state != undefined){
     sidebar.classList.add(sidebar_state)
   }
 });

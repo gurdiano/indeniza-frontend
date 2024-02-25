@@ -246,57 +246,112 @@
                                             <div class="text-center">
                                                 <h1 class="h4 text-gray-900 custom-mb-4">Client</h1>
                                             </div>
-                                            
+
                                             <div>
                                                 <label class="h12 text-gray-900">Data</label>
                                             </div>
                                             <form class="user">
                                                 <div class="form-group row">
                                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                                        <input type="text" class="form-control form-control-user" id="cpf"
-                                                            placeholder="CPF (000.000.00-00)" oninput="formatCPF(this)">
+                                                        <input type="text" class="form-control form-control-user " id="cpf"
+                                                            placeholder="CPF (000.000.00-00)" oninput="formatCPF(this, 'cpf_error', 'cpf_valid')">
+                                                        <div class="custom-valid-feedback custom-dn" id="cpf_valid">
+                                                            This CPF is valid!
+                                                        </div>
+                                                        <div class="custom-invalid-feedback custom-dn" id="cpf_error">
+                                                            Please input a valid CPF! example: 000.000.000-00
+                                                        </div>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <input type="text" class="form-control form-control-user" id="rg"
-                                                            placeholder="RG (00.000.000-0)" oninput="formatRG(this)">
+                                                            placeholder="RG (00.000.000-0)" oninput="formatRG(this, 'rg_error', 'rg_valid')">
+                                                        <div class="custom-valid-feedback custom-dn" id="rg_valid">
+                                                            This RG is valid!
+                                                        </div>
+                                                        <div class="custom-invalid-feedback custom-dn" id="rg_error">
+                                                            Please input a valid RG! example: 00.000.000-0
+                                                        </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <input type="email" class="form-control form-control-user" id="email"
-                                                        placeholder="Email Address" oninput="validatorEmail(this)">
+                                                    <input type="email" class="form-control form-control-user " id="email"
+                                                        placeholder="Email Address" oninput="validatorEmail(this, 'email_error', 'email_valid')">
+                                                    <div class="custom-valid-feedback custom-dn" id="email_valid">
+                                                        This email is valid!
+                                                    </div>
+                                                    <div class="custom-invalid-feedback custom-dn" id="email_error">
+                                                        Please input a valid email! example: john123@outlook.com
+                                                    </div>
                                                 </div>
-                
+                                                
                                                 <div class="form-group row">
                                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                                        <input type="text" class="form-control form-control-user" id="first-name"
-                                                            placeholder="First Name" oninput="firstName(this)" onblur="nameOnBlur(this)">
+                                                        <input type="text" class="form-control form-control-user " id="first-name"
+                                                            placeholder="First Name" oninput="firstName(this)" onblur="nameOnBlur(this, 'fname_error', 'fname_valid')">
+                                                        <div class="custom-valid-feedback custom-dn" id="fname_valid">
+                                                            This name is valid!
+                                                        </div>
+                                                        <div class="custom-invalid-feedback custom-dn" id="fname_error">
+                                                            Please input a valid name!
+                                                        </div>
                                                     </div>
                                                     <div class="col-sm-6">
-                                                        <input type="text" class="form-control form-control-user" id="last-name"
-                                                            placeholder="Last Name" oninput="lastName(this)" onblur="nameOnBlur(this)">
+                                                        <input type="text" class="form-control form-control-user " id="last-name"
+                                                            placeholder="Last Name" oninput="lastName(this)" onblur="nameOnBlur(this, 'lname_error', 'lname_valid')">
+                                                        <div class="custom-valid-feedback custom-dn" id="lname_valid">
+                                                            This name is valid!
+                                                        </div>
+                                                        <div class="custom-invalid-feedback custom-dn" id="lname_error">
+                                                            Please input a valid name!
+                                                        </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group row">
                                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                                            placeholder="Main Phone">
+                                                        <input type="text" class="form-control form-control-user " id="phone1"
+                                                            placeholder="Main Phone" oninput="formatPhone(this)" onblur="validatorPhone(this, 'mphone_error', 'mphone_valid')">
+                                                        <div class="custom-valid-feedback custom-dn" id="mphone_valid">
+                                                            This number is valid!
+                                                        </div>
+                                                        <div class="custom-invalid-feedback custom-dn" id="mphone_error">
+                                                            Please input a valid number! ex: (00) 0 0000-0000
+                                                        </div>
                                                     </div>
                                                     <div class="col-sm-6">
-                                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                                            placeholder="Secondary Phone">
+                                                        <input type="text" class="form-control form-control-user " id="phone2"
+                                                            placeholder="Secondary Phone" onblur="formatSecudaryPhone(this, 'sphone_error', 'sphone_valid')">
+                                                        <div class="custom-valid-feedback custom-dn" id="sphone_valid">
+                                                            Any number is accepted!
+                                                        </div>
+                                                        <div class="custom-invalid-feedback custom-dn" id="sphone_error">
+                                                            Please input a number!
+                                                        </div>
                                                     </div>
                                                 </div>
                 
                                                 <div class="form-group row">
                                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                                        <input type="text" class="form-control form-control-user" id="exampleBirthDate"
-                                                        placeholder="Birth Date">
+                                                        <input type="text" class="form-control form-control-user " id="birth"
+                                                        placeholder="Birth (dd/mm/YYYY)" maxlength="10" oninput="formatBirth(this)" onblur="validatorDate(this, 'date_error', 'date_valid')">
+                                                        <div class="custom-valid-feedback custom-dn" id="date_valid">
+                                                            This date is valid!
+                                                        </div>
+                                                        <div class="custom-invalid-feedback custom-dn" id="date_error">
+                                                            Please input a valid date! ex: day/month/year
+                                                        </div>
                                                     </div>
+
                                                     <div class="col-sm-6">
-                                                        <input type="text" class="form-control form-control-user" id="exampleMothersName"
-                                                        placeholder="Mother's Name">
+                                                        <input type="text" class="form-control form-control-user" id="mothers-name"
+                                                        placeholder="Mother's Name" oninput="lastName(this)" onblur="nameOnBlur(this, 'mother_error', 'mother_valid')">
+                                                        <div class="custom-valid-feedback custom-dn" id="mother_valid">
+                                                            This name is valid!
+                                                        </div>
+                                                        <div class="custom-invalid-feedback custom-dn" id="mother_error">
+                                                            Please input a mother's name!
+                                                        </div>
                                                     </div>
                                                 </div>
 
@@ -338,13 +393,6 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
 
     <!-- Table level plugins -->
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
